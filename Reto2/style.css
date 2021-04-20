@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=RocknRoll+One&display=swap');
+body {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background: #B6DEFC;
+}
+
+form {
+    border-radius: 20px;
+    background: #6E89FA;
+    margin: 30px 250px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 40px!important;
+}
+
+#title, #name-label, #email-label, #number-label, #dropdown, #food-label, #pais-label, #comentarios-label {
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 20px;
+}
+
+#description {
+    font-size: 18px;
+}
+
+main {
+    margin: 20px 40px;
+    background: #5DB7F9;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+input, #submit, select, textarea {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+}
+
+#submit {
+    border: none;
+    width: 50%;
+    padding: 5px;
+    background: #3D42FC;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
