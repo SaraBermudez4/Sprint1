@@ -1,6 +1,6 @@
 :root {
     --color-primary: #FEC7D7;
-    --color-secundary:#A786DF;
+    --color-secundary: #A786DF;
     --font-family: "Nunito";
     --color-blue: #91C1D7;
     --color-green: #85D1CE;
@@ -9,43 +9,6 @@
     --color-black: #0E172C;
     --bs-secondary: #0E172C;
 }
-
-#home{
-    background: var(--color-primary);
-    font-family: Nunito;
-    font-style: normal;
-}
-#detalle{
-    font-family: Nunito;
-    font-style: normal;
-}
-
-.btn-perro, .btn-gato {
-    border-radius: 8px;
-    padding: 8px;
-    background: var(--color-black);
-    width: 155px;
-    height: 80px;
-    left: 172px;
-    top: 0px;
-}
-
-.icono-gato, .icono-perro {
-    border-radius: 100%;
-    background: var(--color-green);
-    margin-left: 15px;
-}
-
-#imagen-perro, #imagen-gato {
-    padding-bottom: 5px;
-    padding-top: 5px;
-    margin-left: -5px;
-}
-
-.categoria-gato, .categoria-perro {
-    padding-top: 8%;
-}
-
 .Headline1 {
     font-weight: 800;
     font-size: 24px;
@@ -113,7 +76,39 @@
     font-size: 11px;
     line-height: 15px;
     letter-spacing: 0.004em;
-    color:var(--color-gray)
+    color: var(--color-gray)
+}
+
+#home {
+    background: var(--color-primary);
+    font-family: Nunito;
+    font-style: normal;
+}
+
+.btn-perro, .btn-gato {
+    border-radius: 8px;
+    padding: 8px;
+    background: var(--color-black);
+    width: 155px;
+    height: 80px;
+    left: 172px;
+    top: 0px;
+}
+
+.icono-gato, .icono-perro {
+    border-radius: 100%;
+    background: var(--color-green);
+    margin-left: 15px;
+}
+
+#imagen-perro, #imagen-gato {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-left: -5px;
+}
+
+.categoria-gato, .categoria-perro {
+    padding-top: 8%;
 }
 
 .gradiente {
@@ -156,19 +151,6 @@ button:focus:not(:focus-visible) {
     opacity: 50%;
 }
 
-.cards {
-    border-radius: 8px;
-    width: 92px;
-    height: 92px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.descripcion-mascota {
-    background-color: white;
-}
-
 .modal-imagen {
     display: flex;
     justify-content: center;
@@ -191,6 +173,7 @@ button:focus:not(:focus-visible) {
     padding-top: 40px;
     border-radius: 70px;
 }
+
 /*
 #staticBackdrop1 {
     position: absolute;
@@ -217,38 +200,3 @@ button:focus:not(:focus-visible) {
     
 }
 */
-  
-/*Detalle mascota*/
-
-.btn-contactar {
-    width: 100%;
-    border-radius: 98px;
-    padding: 16px;
-    background: var(--color-black);
-}
-.carinoso, .inquieto, .jugueton{
-    border-style: solid;
-    border-color: var(--color-secundary)
-}
-.imagen-personalidad{
-    align-content: center;
-}
-.flotante-favorito{
-    position: absolute;
-    bottom: 586px;
-    right: 14px;
-    z-index: 100;
-}
-.flotante-atras{
-    position: absolute;
-    bottom: 744px;
-    right: 307px;
-    z-index: 100;
-}
-.descripcion-mascota {
-    position: absolute;
-    background-color: white;
-    top: 415px;
-    width: 100%;
-    border-radius: 16px 16px 0px 0px;
-}
