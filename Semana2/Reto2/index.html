@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title>Technical Documentation Page</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light list-group  navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div>
+                        <header>
+                            <h1>Programación en Python</h1>
+                        </header>
+                        <div class="container-fluid">
+                            <a class="navbar-brand nav-link" href="#Introduccion">Introduccion</a>
+                        </div>
+                        <div class="container-fluid">
+                            <a class="navbar-brand nav-link" href="#Instalacion">Instalacion</a>
+                        </div>
+                        <div class="container-fluid">
+                            <a class="navbar-brand nav-link" href="#Hello_World">Hello World</a>
+                        </div>
+                        <div class="container-fluid">
+                            <a class="navbar-brand nav-link" href="#Variables">Variables</a>
+                        </div>
+                        <div class="container-fluid">
+                            <a class="navbar-brand nav-link" href="#Condicionales">Condicionales</a>
+                        </div>
+                        <div class="container-fluid">
+                            <a class="navbar-brand nav-link" href="#Ciclos">Ciclos</a>
+                        </div>
+                        <div class="container-fluid">
+                            <a class="navbar-brand nav-link" href="#Ciclo_for">Ciclo for</a>
+                        </div>
+                        <div class="container-fluid">
+                            <a class="navbar-brand nav-link" href="#Ciclo_while">Ciclo while</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduccion">
+            <header>
+                <h1>Introduccion</h1>
+            </header>
+            <p>Este curso esta pensado para ser cursado por una persona que no conoce nada de programación y se emplea
+                el lenguaje Python como primer lenguaje para acercarse a la programación de computadoras.</p>
+            <p>El objetivo fundamental de este tutorial es permitir que el estudiante pueda resolver problemas de
+                distinta índole como:
+            <ul>
+                <li>Matemáticos</li>
+                <li>Administrativos</li>
+                <li>Juegos</li>
+                <li>Contables</li>
+                <li>Etc</li>
+            </ul>
+            empleando como herramienta la computadora.</p>
+            <p>Hay que tener en cuenta que para llegar a ser un programador se debe recorrer un largo camino donde cada
+                tema es fundamental para conceptos futuros. Es importante no dejar temas sin entender y relacionar.</p>
+            <p>La programación a diferencia de otras materias que ha estudiado como podría ser la historia requiere un
+                estudio metódico y ordenado (en historia se puede estudiar la edad media sin tener grandes conocimientos
+                de la edad antigua, esto no pasa con el aprendizaje de la programación).</p>
+            <p>La programación es una actividad nueva para el estudiante, no hay en los estudios primarios y secundarios
+                una materia parecida.</p>
+            <p>Es bueno tenerse paciencia cuando los problemas no se resuelven por completo, pero es de fundamental
+                importancia dedicar tiempo al análisis individual de los problemas.</p>
+            <p>Por ultimo te doy una gran bienvenida a este pequeño curso de python. Espero que puedas aprender lo
+                necesario para diseñar programas en python.</p>
+            <code>
+                print("Hello World!")
+               </code>
+
+        </section>
+        <section class="main-section" id="Instalacion">
+            <header>
+                <h1>Instalacion</h1>
+            </header>
+            <p>Para instalar Python en nuestras computadoras tenemos que seguir una serie de pasos:
+            <ul>
+                <li>Para la descarga del lenguaje Python lo hacemos del sitio: <a
+                        href="https://www.python.org/downloads/">python.org</a> (descargar la versión más actual)</li>
+                <li>Al abrir el instalador seleccionamos la casilla de "Add Python 3.8 to PATH"</li>
+                <li>Continuamos con la instalación por defecto</li>
+                <li>Luego de haberse instalado podemos ejecutarlo desde el menú de opciones de Windows</li>
+                <li>Una vez que iniciamos el Python aparecerá una consola donde podemos programar todo lo que queramos
+                </li>
+            </ul>
+            </p>
+            <p>Para crear un archivo y ejecutarlo debemos:
+            <ul>
+                <li>Debemos seleccionar desde el menú de opciones "File"->"New File"</li>
+                <li>En esta nueva ventana debemos codificar nuestro programa en Python, el programa mínimo es mostrar un
+                    mensaje por pantalla: Escribiendo "print("hola mundo")"</li>
+                <li>Procedemos a guardar en el "disco duro" el primer programa en Python seleccionando la opción
+                    "File"->"Save", creamos un directorio donde almacenaremos cada uno de nuestros ejercicio que
+                    desarrollaremos durante este tutorial</li>
+                <li>Para ejecutar el programa que codificamos debemos seleccionar desde la ventana de nuestro editor la
+                    opción "Run" -> "Run Module"</li>
+                <li>Podemos ver en otra ventana el resultado de la ejecución de nuestro primer programa en Python</li>
+            </ul>
+            </p>
+        </section>
+        <section class="main-section" id="Hello_World">
+            <header>
+                <h1>Hello World</h1>
+            </header>
+            <p>Ahora que tenemos Python en nuestras comutadoras, podemos crear nuestro primer "hola mundo", pero para
+                hacerlo un poco más interesante, resolveremos un problema:</p>
+            <p>Hallar la superficie de un cuadrado conociendo el valor de un lado.</p>
+            <p>Desde la ventana principal del entorno de Python procedemos a crear nuestro segundo archivo
+                "ejercicio2.py", lo grabamos como vimos en el concepto anterior y codificamos en Python la solución a
+                este problema</p>
+            <code>
+                lado=input("Ingrese la medida del lado del cuadrado:")
+                lado=int(lado)
+                superficie=lado*lado
+                print("La superficie del cuadrado es")
+                print(superficie)
+               </code>
+            <p>Si ejecutamos el programa "Run" -> "Run Module" podemos comprobar que se solicita el ingreso por teclado
+                de la medida del lado del cuadrado y seguidamente nos muestra la superficie dependiendo del valor
+                ingresado</p>
+            <p>Para el ingreso de un dato por teclado y mostrar un mensaje se utiliza la función input, esta función
+                retorna todos los caracteres escritos por el operador del programa</p>
+            <code>
+                lado=input("Ingrese la medida del lado del cuadrado:")
+               </code>
+            <p>La variable lado guarda todos los caracteres ingresados pero no en formato numérico, para esto debemos
+                llamar a la función int:</p>
+            <code>
+                lado=int(lado)
+               </code>
+            <p>Ahora se vuelve a guardar en la variable lado el valor que ingresó el operador pero en formato entero que
+                posibilita hacer operaciones matemáticas con el mismo.
+
+                Un formato simplificado para ingresar un valor entero por teclado y evitarnos escribir las dos líneas
+                anteriores es:</p>
+            <code>
+                lado=int(input("Ingrese la medida del lado del cuadrado:"))
+               </code>
+
+            <p>Procedemos a efectuar el cálculo de la superficie luego de ingresar el dato por teclado y convertirlo a
+                entero:</p>
+            <code>
+                superficie=lado*lado
+                  </code>
+            <p>Para mostrar un mensaje por pantalla tenemos la función print que le pasamos como parámetro una cadena de
+                caracteres a mostrar que debe estar entre simple o doble comillas</p>
+            <code>
+                print("La superficie del cuadrado es")
+                  </code>
+            <p>Para mostrar el contenido de la variable superficie no debemos encerrarla entre comillas cuando llamamos
+                a la función print:</p>
+            <code>
+                print(superficie)
+                  </code>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>
+                <h1>Variables</h1>
+            </header>
+            <p>Para iniciarlas por asignación utilizamos el operador =</p>
+            <code>
+                #definición de una variable entera
+                cantidad=20
+                #definición de una variable flotante
+                altura=1.92
+               </code>
+            <p>Para realizar la carga por teclado utilizando la función input debemos llamar a la función int o float
+                para convertir el dato devuelto por input:</p>
+            <code>
+                cantidad=int(input("Ingresar la cantidad de personas:"))
+                altura=float(input("Ingresar la altura de la persona en metros ej:1.70:"))
+               </code>
+            <p>A estos dos tipos de datos fundamentales (int y float) se suma un tipo de dato muy utilizado que son las
+                cadenas de caracteres.</p>
+
+            <p>Inicialización de una cadena por asignación:</p>
+            <code>
+                #definición e inicio de una cadena de caracteres
+                dia="lunes"
+               </code>
+            <p>Igual resultado obtenemos si utilizamos la comilla simple:</p>
+            <code>
+                #definición e inicio de una cadena de caracteres
+                dia='lunes'
+               </code>
+            <p>Para la carga por teclado de una cadena de caracteres utilizamos la función input que retorna una cadena
+                de caracteres:</p>
+            <code>
+                nombre=input("ingrese su nombre:")
+               </code>
+        </section>
+        <section class="main-section" id="Condicionales">
+            <header>
+                <h1>Condicionales</h1>
+            </header>
+            <h2>Estructura condicional simple.</h2>
+            <p>Cuando se presenta la elección tenemos la opción de realizar una actividad o no realizar ninguna.</p>
+            <code>
+                sueldo=int(input("Ingrese cual es su sueldo:"))
+                if sueldo>3000:
+                    print("Esta persona debe abonar impuestos")
+               </code>
+            <p>La palabra clave "if" indica que estamos en presencia de una estructura condicional; seguidamente
+                disponemos la condición y finalizamos la línea con el caracter dos puntos.
+                La actividad dentro del if se indenta generalmente a 4 espacios.</p>
+            <p>Todo lo que se encuentre en la rama del verdadero del if se debe disponer a 4 espacios corrido a derecha.
+            </p>
+            <p>La indentación es una característica obligatoria del lenguaje Python para codificación de las estructuras
+                condicionales, de esta forma el intérprete de Python puede identificar donde finalizan las instrucciones
+                contenidas en la rama verdadera del if.</p>
+            <p>Ejecutando el programa e ingresamos un sueldo superior a 3000. Podemos observar como aparece en pantalla
+                el mensaje "Esta persona debe abonar impuestos", ya que la condición del if es verdadera</p>
+            <p>Si lo volvemos a ejecutar e ingresamos un valor igual o inferior a 3000 podemos observar que la
+                instrucción que se encuentra por la rama del verdadero del if no se ejecuta</p>
+
+
+            <h2>Estructura condicional compuesta.</h2>
+            <p>Cuando se presenta la elección tenemos la opción de realizar una actividad u otra. Es decir tenemos
+                actividades por el verdadero y por el falso de la condición. Lo más importante que hay que tener en
+                cuenta que se realizan las actividades de la rama del verdadero o las del falso, NUNCA se realizan las
+                actividades de las dos ramas.</p>
+            <code>
+                num1=int(input("Ingrese primer valor:"))
+                num2=int(input("ingrese segundo valor:"))
+                print("El valor mayor es")
+                if num1>num2:
+                    print(num1)
+                else:
+                    print(num2)
+               </code>
+            <p>Se hace la entrada de num1 y num2 por teclado. Para saber cual variable tiene un valor mayor preguntamos
+                si el contenido de num1 es mayor (>) que el contenido de num2, si la respuesta es verdadera vamos por la
+                rama de la derecha e imprimimos num1, en caso que la condición sea falsa vamos por la rama de la
+                izquierda (Falsa) e imprimimos num2.
+                Como podemos observar nunca se imprimen num1 y num2 simultáneamente.</p>
+
+            <h2>Operadores.</h2>
+            <p>En una condición deben disponerse únicamente variables, valores constantes y operadores relacionales.</p>
+            <ul>
+                <li>== Igualdad</li>
+                <li>!= Desigualdad</li>
+                <li>
+                    < menor</li>
+                <li>
+                    <= menor o igual</li>
+                <li>> mayor</li>
+                <li>>= mayor o igual</li>
+            </ul>
+            <h2>Operadores Matemáticos</h2>
+            <p>Hay que tener en cuenta que al disponer una condición debemos seleccionar que operador relacional se
+                adapta a la pregunta.</p>
+            <ul>
+                <li>+ suma</li>
+                <li>- resta</li>
+                <li>* multiplicación</li>
+                <li>/ división de flotantes</li>
+                <li>// división de enteros</li>
+                <li>% resto de una división</li>
+                <li>** exponenciación</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Ciclos">
+            <header>
+                <h1>Ciclos</h1>
+            </header>
+            <p>Una estructura repetitiva permite ejecutar una instrucción o un conjunto de instrucciones varias veces.
+            </p>
+            <p>Una estructura repetitiva se caracteriza por:</p>
+            <ul>
+                <li>La sentencia o las sentencias que se repiten.</li>
+                <li>El test o prueba de condición antes de cada repetición, que motivará que se repitan o no las
+                    instrucciones.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Ciclo_for">
+            <header>
+                <h1>Ciclo for</h1>
+            </header>
+            <p>Cualquier problema que requiera una estructura repetitiva se puede resolver empleando la estructura
+                while, pero hay otra estructura repetitiva cuyo planteo es más sencillo en ciertas situaciones que
+                tenemos que recorrer una lista de datos.</p>
+            <p>En general, la estructura repetitiva for se usa en aquellas situaciones en las cuales queremos que una
+                variable vaya tomando un valor de una lista definida de valores.</p>
+            <p>Este codigo imprime en pantalla los números del 0 al 100</p>
+            <code>
+                for x in range(101):
+                    print(x)
+               </code>
+            <p>La función range retorna la primera vez el valor 0 y se almacena en x, luego el 1 y así sucesivamente
+                hasta que retorna el valor que le pasamos a range menos uno (es decir en nuestro ejemplo al final
+                retorna un 100)</p>
+            <p>Este codigo imprime en pantalla los números del 20 al 30.</p>
+            <code>
+                for x in range(20,31):
+                    print(x)
+               </code>
+            <p>La función range puede tener dos parámetros, el primero indica el valor inicial que tomará la variable x,
+                cada vuelta del for la variable x toma el valor siguiente hasta llegar al valor indicado por el segundo
+                parámetro de la función range menos uno.</p>
+            <p>Este codigo imprime en pantalla todos los números impares que hay entre 1 y 100.</p>
+            <code>
+                for x in range(1,100,2):
+                    print(x)
+               </code>
+            <p>La función range puede tener también tres parámetros, el primero indica el valor inicial que tomará la
+                variable x, el segundo parámetro el valor final (que no se incluye) y el tercer parámetro indica cuanto
+                se incrementa cada vuelta x.</p>
+        </section>
+        <section class="main-section" id="Ciclo_while">
+            <header>
+                <h1>Ciclo while</h1>
+            </header>
+            <p>No debemos confundir la representación gráfica de la estructura repetitiva while (Mientras) con la
+                estructura condicional if (Si)</p>
+            <p>Funcionamiento: En primer lugar se verifica la condición, si la misma resulta verdadera se ejecutan las
+                operaciones que indicamos por la rama del Verdadero.
+                A la rama del verdadero la graficamos en la parte inferior de la condición. Una línea al final del
+                bloque de repetición la conecta con la parte superior de la estructura repetitiva.
+                En caso que la condición sea Falsa continúa por la rama del Falso y sale de la estructura repetitiva
+                para continuar con la ejecución del algoritmo.</p>
+            <p>El bloque se repite MIENTRAS la condición sea Verdadera.</p>
+            <p><b>Importante:</b> Si la condición siempre retorna verdadero estamos en presencia de un ciclo repetitivo
+                infinito. Dicha situación es un error de programación lógico, nunca finalizará el programa.</p>
+            <code>
+                x=1
+                while x<=100:
+                    print(x)
+                    x=x+1
+               </code>
+        </section>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
