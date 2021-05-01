@@ -26,7 +26,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6 mx-1">
-                        <button class="btn-perro btn btn-secondary">
+                        <button class="btn-perro btn btn-secondary" onClick="perro()">
                             <div class="row">
                                 <div class="col-4 icono-perro">
                                     <img id="imagen-perro" src="imagenes/Categoría=Perros.png">
@@ -38,7 +38,7 @@
                         </button>
                     </div>
                     <div class="col-5 mx-1">
-                        <button class="btn-gato btn btn-secondary" type="button">
+                        <button class="btn-gato btn btn-secondary" onClick="gato()">
                             <div class="row">
                                 <div class="col-4 icono-gato">
                                     <img id="imagen-gato" src="imagenes/Categoría=Gatos.png">
@@ -54,40 +54,13 @@
     </header>
     <main>
         <div class="container-fluid mt-4 mb-3">
-            <div class="row row-cols-2 row-cols-md-2 g-4">
-                <div class="col">
-                    <div class="card bg-dark text-white gradiente">
-                        <a href="detalle_mascota.html">
-                            <img src="imagenes/transparente.png" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title body2Bold">Jorge</h5>
-                                <p class="card-text body2Regular">Perro</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card bg-dark text-white gradiente">
-                        <img src="imagenes/transparente.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title body2Bold">Jorge</h5>
-                            <p class="card-text body2Regular">Perro</p>
-                        </div>
-                    </div>
+            <div class="row row-cols-2 row-cols-md-2 g-4 grid-mascotas">
+                <div class="col columna1">
+                    
+                    
                 </div>
-                <div class="col pt-3">
-                    <div class="card bg-dark text-white gradiente">
-                        <img src="imagenes/transparente.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title body2Bold">Jorge</h5>
-                            <p class="card-text body2Regular">Perro</p>
-                        </div>
-                    </div>
-                    <div class="card bg-dark text-white gradiente">
-                        <img src="imagenes/transparente.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title body2Bold">Jorge</h5>
-                            <p class="card-text body2Regular">Perro</p>
-                        </div>
-                    </div>
+                <div class="col pt-3 columna2">
+                    
                 </div>
             </div>
         </div>
@@ -163,5 +136,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
-
+<script type="module" src="main.js" ></script>
 </html>

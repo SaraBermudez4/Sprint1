@@ -9,6 +9,7 @@
     --color-black: #0E172C;
     --bs-secondary: #0E172C;
 }
+
 .Headline1 {
     font-weight: 800;
     font-size: 24px;
@@ -111,14 +112,22 @@
     padding-top: 8%;
 }
 
-.gradiente {
-    background-image: linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.158), rgba(0, 0, 0, 0.863)), url(imagenes/perro11.jpg);
+.card-img {
     height: 250px;
     width: 156px;
-    padding: 16px;
+    filter: brightness(0.8);
     border-radius: 16px;
     border: none;
     margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.card {
+    border: none;
+}
+
+.bg-dark {
+    background-color: rgba(33, 37, 41, 0)!important;
 }
 
 .card-title {
