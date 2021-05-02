@@ -75,7 +75,7 @@ function mostrarDetalle(id) {
             </div>
         </div>
     `
-    console.log(mascotaId.personalidad[0])
+    //console.log(mascotaId.personalidad[0])
 
     for (let i = 0; i < 3; i++) {
         if (mascotaId.personalidad[i] == "Cariñoso") {
@@ -140,9 +140,58 @@ function mostrarDetalle(id) {
     imgContacto += `
     <img id="imagen-contacto" src="${mascotaId.imgusuario}">
     `
-    console.log(id)
+    //console.log(id)
+
 }
-function favorito(event){
-    localStorage.setItem("mascotaFavorita", id)
+
+function favorito(event) {
+    let tipo_mascota = localStorage.getItem("tipoMascota")
+    if (tipo_mascota == "perro") {
+        var mascotaId2 = []
+        if (localStorage.getItem('mascotaFavorita')) {
+            var existe
+            mascotaId2 = JSON.parse(localStorage.getItem("mascotaFavorita"))
+
+            existe = mascotaId2.filter((item2) => item2.nombre == mascotasPerroBD[id].nombre)
+            console.log(existe)
+            if (existe.length > 0) {
+                console.log("Existe")
+                let listaUnica = [...new Set(mascotaId2)];
+                localStorage.removeItem("mascotaFavorita", JSON.stringify(mascotaId2));
+                localStorage.setItem("mascotaFavorita", JSON.stringify(listaUnica))
+            } else {
+                mascotaId2.push(mascotasPerroBD[id])
+                localStorage.setItem("mascotaFavorita", JSON.stringify(mascotaId2))
+            }
+        } else {
+            mascotaId2.push(mascotasPerroBD[id])
+            localStorage.setItem("mascotaFavorita", JSON.stringify(mascotaId2))
+        }
+
+    } else {
+        var mascotaId2 = []
+        if (localStorage.getItem('mascotaFavorita')) {
+            var existe
+            mascotaId2 = JSON.parse(localStorage.getItem("mascotaFavorita"))
+
+            existe = mascotaId2.filter((item2) => item2.nombre == mascotasGatoBD[id].nombre)
+
+            if (existe.length > 0) {
+                console.log("Existe")
+                let listaUnica = [...new Set(mascotaId2)];
+                localStorage.removeItem("mascotaFavorita", JSON.stringify(mascotaId2));
+                localStorage.setItem("mascotaFavorita", JSON.stringify(listaUnica))
+            } else {
+                mascotaId2.push(mascotasGatoBD[id])
+                localStorage.setItem("mascotaFavorita", JSON.stringify(mascotaId2))
+            }
+        } else {
+            mascotaId2.push(mascotasGatoBD[id])
+            localStorage.setItem("mascotaFavorita", JSON.stringify(mascotaId2))
+        }
+    }
+
+
+    //localStorage.setItem("mascotaFavorita", id)
 }
 document.querySelector(".flotante-favorito").onclick = favorito;
