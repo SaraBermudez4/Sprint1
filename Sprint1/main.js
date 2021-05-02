@@ -49,9 +49,6 @@ function gato(event){
 document.querySelector(".btn-perro").onclick = perro;
 document.querySelector(".btn-gato").onclick = gato;
 
-
-
-
 window.addEventListener('load', e => {
     let tipo_mascota = localStorage.getItem("tipoMascota")
     if(tipo_mascota == "perro"){

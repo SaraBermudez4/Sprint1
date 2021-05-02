@@ -1,12 +1,12 @@
 let mascotasPerroBD = [
     {
-        nombre: "Chester ",
+        nombre: "Chester",
         raza: "Golden retriever",
-        edad: "3 meses",
-        ubicacion: "4140 Parker Rd. Allentown, New Mexico 31134",
-        personalidad: ["Cariñoso", "Juguetón"],
-        historia: "Rocky es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
-        usuario : "Maria Dolores",
+        edad: "12 meses",
+        ubicacion: "calle 54-12b 108 - Medellín Antioquia  Colombia",
+        personalidad: ["Aventurero", "Paciente"],
+        historia: "Chester es un perro muy valiente y leal, por lo general suele ser muy tranquilo, casi ni se siente en la casa, además es muy cariñoso y obediente . La razón por la cual nos tenemos que separar del es porque nos vamos a ir a vivir al exterior y el desafortunadamente no nos puede acompañar, entonces estamos en busca de una persona que lo sepa cuidar con todo el corazón.",
+        usuario : "Enrique Gómez",
         imgusuario : "imagenes/Ellipse9.png",
         imagen: "imagenes/perro2.jpg",
         id:  0
@@ -24,13 +24,13 @@ let mascotasPerroBD = [
         id: 1
     },
     {
-        nombre: "Papi ",
+        nombre: "Papi",
         raza: "Chihuahua",
-        edad: "3 meses",
-        ubicacion: "4140 Parker Rd. Allentown, New Mexico 31134",
+        edad: "5 meses",
+        ubicacion: "calle 32-120b 180 - Medellin Antioquia Colombia",
         personalidad: ["Cariñoso", "Juguetón"],
-        historia: "Matilde es la mejor guarda espaldas, siempre esta hay para conversar y recibirá cada día con un fuerte cariño. Fue rescatada y busco una persona que le pueda dar todo el amor que ella necesita.",
-        usuario : "Maria Dolores",
+        historia : "Papi es un perrito que llego a nuestras vidas gracias a que lo encontramos en una casa abandonada, es un perro que es muy protector con sus dueños y que siempre está de buen humor. La razón por la que no lo puedo tener mas es porque mi novio es alérgico a los perro asi que estamos buscando una familia que le de mucho amor.",
+        usuario: "Sofia Álvarez",
         imgusuario : "imagenes/Ellipse9.png",
         imagen: "imagenes/perro3.jpg",
         id : 2
@@ -38,11 +38,11 @@ let mascotasPerroBD = [
     {
         nombre: "Pelusa",
         raza: "Bichón frisé",
-        edad: "3 meses",
-        ubicacion: "4140 Parker Rd. Allentown, New Mexico 31134",
-        personalidad: ["Cariñoso", "Juguetón"],
-        historia: "Matilde es la mejor guarda espaldas, siempre esta hay para conversar y recibirá cada día con un fuerte cariño. Fue rescatada y busco una persona que le pueda dar todo el amor que ella necesita.",
-        usuario : "Maria Dolores",
+        edad: "8 meses",
+        ubicacion: "calle 23-42a 113 - Medellín Antioquia Colombia",
+        personalidad: ["Tranquilo", "Cariñoso"],
+        historia: "Pelusa es un perro que fue previamente entrenado en una academia canina así que suele ser muy obediente y tranquilo, el llego a mi vida ya que fue un regalo de un amigo pero lastimosamente dónde me voy a mudar no me permiten tener mascotas así que estoy buscando a una familia que lo cuide y le de mucho amor.",
+        usuario : "Martin Lemus",
         imgusuario : "imagenes/Ellipse9.png",
         imagen: "imagenes/perro4.jpg",
         id : 3

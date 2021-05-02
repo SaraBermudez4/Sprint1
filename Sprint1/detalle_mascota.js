@@ -15,12 +15,12 @@ function mostrarDetalle(id) {
     let imgContacto = document.querySelector(".img-usuario")
 
     let tipo_mascota = localStorage.getItem("tipoMascota")
-    if(tipo_mascota == "perro"){
+    if (tipo_mascota == "perro") {
         var mascotaId = mascotasPerroBD[id]
-    }else{
+    } else {
         var mascotaId = mascotasGatoBD[id]
     }
-    
+
     imgContacto.innerHTML = ''
     imagenDetalle.innerHTML = ''
     nombreMascota.innerHTML = ''
@@ -37,7 +37,7 @@ function mostrarDetalle(id) {
     <p class="Headline1">${mascotaId.nombre}
         <img src="imagenes/Component 5.png">
     </p>
-    <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=No guardado.png"/></a>
+    <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=No guardado.png" onClick="favorito()"/></a>
     `
 
     razaMascota.innerHTML += `
@@ -76,7 +76,7 @@ function mostrarDetalle(id) {
         </div>
     `
     console.log(mascotaId.personalidad[0])
-    
+
     for (let i = 0; i < 3; i++) {
         if (mascotaId.personalidad[i] == "Cariñoso") {
             personalidades.innerHTML += `
@@ -108,6 +108,16 @@ function mostrarDetalle(id) {
                     <p class="body1Regular ms-1">Jugueton</p>
                 </div>
             </div>`
+        } else if (mascotaId.personalidad[i] == "Tierno") {
+            personalidades.innerHTML += `
+            <div class="col cards tierno">
+                <div class="col-4">
+                    <img class= "imagen-personalidad ps-3" src="imagenes/Property 1=Tierno.png">
+                </div>
+                <div class="col-4">
+                    <p class="body1Regular ms-1">Tierno</p>
+                </div>
+            </div>`
         }
     }
 
@@ -132,4 +142,7 @@ function mostrarDetalle(id) {
     `
     console.log(id)
 }
-
+function favorito(event){
+    localStorage.setItem("mascotaFavorita", id)
+}
+document.querySelector(".flotante-favorito").onclick = favorito;
