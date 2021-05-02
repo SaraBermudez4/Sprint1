@@ -49,9 +49,6 @@ function mostrarDetalle(id) {
         <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=No guardado.png" onClick="favorito()"/></a>`
     }
 
-
-
-
     imgContacto.innerHTML = ''
     imagenDetalle.innerHTML = ''
     nombreMascota.innerHTML = ''
@@ -247,6 +244,8 @@ function favorito(event) {
                 mascotaId2.splice(index, 1)
                 localStorage.setItem("mascotaFavorita", JSON.stringify(mascotaId2))
 
+                window.location.reload();
+
             } else {
                 let iconoFavorito = document.querySelector(".iconoFavorito")
                 iconoFavorito.innerHTML = ''
@@ -255,6 +254,8 @@ function favorito(event) {
                 `
                 mascotaId2.push(mascotasPerroBD[id])
                 localStorage.setItem("mascotaFavorita", JSON.stringify(mascotaId2))
+
+                window.location.reload();
             }
         } else {
             let iconoFavorito = document.querySelector(".iconoFavorito")
@@ -264,6 +265,8 @@ function favorito(event) {
             `
             mascotaId2.push(mascotasPerroBD[id])
             localStorage.setItem("mascotaFavorita", JSON.stringify(mascotaId2))
+
+            window.location.reload();
         }
 
     } else {
@@ -306,4 +309,5 @@ function favorito(event) {
         }
     }
 }
+
 document.querySelector(".flotante-favorito").onclick = favorito;

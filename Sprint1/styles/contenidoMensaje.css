@@ -1,0 +1,34 @@
+.mensaje-enviado, .mensaje-recibido {
+    background: white;
+}
+
+.mensaje-enviado {
+    margin-left: 96px;
+    margin-right: 24px;
+    padding: 16px;
+    width: 255px;
+    height: auto;
+    border-radius: 16px;
+}
+
+.mensaje-recibido {
+    width: 255px;
+    height: auto;
+    background: #535353;
+    border-radius: 16px;
+    padding: 16px;
+    margin-left: 24px;
+    margin-right: 96px;
+    color: #FFFFFE;
+}
+
+.hora-enviado, .hora-recibido {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.cuerpo-mensaje {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}

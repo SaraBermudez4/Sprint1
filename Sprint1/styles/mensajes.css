@@ -1,0 +1,40 @@
+.mensaje {
+    background: white;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding: 8px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.enlace-ver-mensaje{
+    text-decoration: none !important;
+}
+
+body {
+    background: var(--color-primary);
+    font-family: 'Nunito';
+}
+
+.contenido-mensaje {
+    margin-top: -16px;
+    color: #535353;
+}
+
+.ver-mensaje {
+    margin-top: 20px;
+    margin-left: -8px;
+}
+
+#imagen-contacto {
+    margin-top: 8px;
+    margin-left: -8px;
+}
+
+.hora {
+    margin-left: -32px;
+}
+
+.usuario{
+    color: #0E172C;
+}
