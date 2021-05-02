@@ -7,7 +7,7 @@ let mascotasGatoBD = [
         personalidad: ["Juguetón", "Tierno"],
         historia: "Matilde es la mejor guarda espaldas, siempre esta ahi para conversar y recibirte cada día con un gran cariño. Fue rescatada y busca una persona que le pueda dar todo el amor que ella necesita.",
         usuario : "Juan Jesus",
-        imgusuario : "imagenes/Ellipse9.png",
+        imgusuario : "imagenes/Ellipse10.png",
         imagen: "imagenes/gato1.jpg",
         id:  0
     },
@@ -31,7 +31,7 @@ let mascotasGatoBD = [
         personalidad: ["Curioso", "Cariñoso"],
         historia: "Pelusa es un gato muy muy curioso, le encanta los días lluviosos y suele ser muy paciente con los niños, es un gato muy hogareño, le encanta dormir y no suele hacer daños en el hogar. La razón por la cual tenemos que dejar ir a pelusa es porque me salió una propuesta de trabajo en el exterior y tengo que viajar en poco tiempo, así que estoy buscando una persona que lo sepa cuidar y que le dé todo lo que necesite.",
         usuario : "Enrique López",
-        imgusuario : "imagenes/Ellipse9.png",
+        imgusuario : "imagenes/Ellipse10.png",
         imagen: "imagenes/gato3.jpg",
         id : 2
     },
@@ -40,7 +40,7 @@ let mascotasGatoBD = [
         raza: "Gato americano ",
         edad: "10 meses",
         ubicacion: "calle 74-53b - 93 - Medellín Antioquia Colombia",
-        personalidad: ["Perezosa", "Tranquila"],
+        personalidad: ["Perezoso", "Tranquilo"],
         historia: "Le pusimos bombón debido a que desde que era muy pequeña le encantaba dormir en su camita así que cada vez que se acostaba parecía una bolita y eso dice mucho de ella, no es una gata muy activa ,suele dormir la mayor parte del día, y le encanta la compañía por las tardes. La razón por la cual tengo que dejar ir a bombón es porque trabajó jornadas muy extensas y no me está quedando tiempo para cuidarla así que busco alguien que le pueda dar todo lo que ella merece.",
         usuario : "Francisca Zapata",
         imgusuario : "imagenes/Ellipse9.png",

@@ -7,6 +7,7 @@ mostrarDetalle(id)
 function mostrarDetalle(id) {
     let imagenDetalle = document.querySelector(".imagen_mascota")
     let nombreMascota = document.querySelector(".nombre-mascota")
+    let iconoFavorito = document.querySelector(".iconoFavorito")
     let personalidades = document.querySelector(".personalidades")
     let historiaMascota = document.querySelector(".historia-mascota")
     let nombreContacto = document.querySelector(".nombre-contacto")
@@ -20,6 +21,36 @@ function mostrarDetalle(id) {
     } else {
         var mascotaId = mascotasGatoBD[id]
     }
+    iconoFavorito.innerHTML = ''
+
+    var mfavorito = []
+    var existe
+    mfavorito = JSON.parse(localStorage.getItem("mascotaFavorita"))
+
+    if (localStorage.getItem('mascotaFavorita')) {
+        existe = mfavorito.filter((item2) => item2.nombre == mascotaId.nombre)
+        console.log(existe)
+        if (existe.length > 0) {
+            let iconoFavorito = document.querySelector(".iconoFavorito")
+            iconoFavorito.innerHTML = ''
+            iconoFavorito.innerHTML += `
+            <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=Guardado.png" onClick="favorito()"/></a>
+        `
+        } else {
+            let iconoFavorito = document.querySelector(".iconoFavorito")
+            iconoFavorito.innerHTML = ''
+            iconoFavorito.innerHTML += `
+            <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=No guardado.png" onClick="favorito()"/></a>`
+        }
+    } else {
+        let iconoFavorito = document.querySelector(".iconoFavorito")
+        iconoFavorito.innerHTML = ''
+        iconoFavorito.innerHTML += `
+        <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=No guardado.png" onClick="favorito()"/></a>`
+    }
+
+
+
 
     imgContacto.innerHTML = ''
     imagenDetalle.innerHTML = ''
@@ -37,8 +68,8 @@ function mostrarDetalle(id) {
     <p class="Headline1">${mascotaId.nombre}
         <img src="imagenes/Component 5.png">
     </p>
-    <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=No guardado.png" onClick="favorito()"/></a>
     `
+
 
     razaMascota.innerHTML += `
         <div class="row">
@@ -75,7 +106,6 @@ function mostrarDetalle(id) {
             </div>
         </div>
     `
-    //console.log(mascotaId.personalidad[0])
 
     for (let i = 0; i < 3; i++) {
         if (mascotaId.personalidad[i] == "Cariñoso") {
@@ -119,8 +149,62 @@ function mostrarDetalle(id) {
                 </div>
             </div>`
         }
+        else if (mascotaId.personalidad[i] == "Curioso") {
+            personalidades.innerHTML += `
+            <div class="col cards curioso">
+                <div class="col-4">
+                    <img class= "imagen-personalidad ps-3" src="imagenes/Property 1=Tierno.png">
+                </div>
+                <div class="col-4">
+                    <p class="body1Regular ms-1">Curioso</p>
+                </div>
+            </div>`
+        }
+        else if (mascotaId.personalidad[i] == "Perezoso") {
+            personalidades.innerHTML += `
+            <div class="col cards perezoso">
+                <div class="col-4">
+                    <img class= "imagen-personalidad ps-3" src="imagenes/Property 1=Tierno.png">
+                </div>
+                <div class="col-4">
+                    <p class="body1Regular ms-1">Perezoso</p>
+                </div>
+            </div>`
+        }
+        else if (mascotaId.personalidad[i] == "Tranquilo") {
+            personalidades.innerHTML += `
+            <div class="col cards tranquilo">
+                <div class="col-4">
+                    <img class= "imagen-personalidad ps-3" src="imagenes/Property 1=Tierno.png">
+                </div>
+                <div class="col-4">
+                    <p class="body1Regular ms-1">Tranquilo</p>
+                </div>
+            </div>`
+        }
+        else if (mascotaId.personalidad[i] == "Aventurero") {
+            personalidades.innerHTML += `
+            <div class="col cards aventurero">
+                <div class="col-4">
+                    <img class= "imagen-personalidad ps-3" src="imagenes/Property 1=Tierno.png">
+                </div>
+                <div class="col-4">
+                    <p class="body1Regular ms-1">Aventurero</p>
+                </div>
+            </div>`
+        }
+        else if (mascotaId.personalidad[i] == "Paciente") {
+            personalidades.innerHTML += `
+            <div class="col cards paciente">
+                <div class="col-4">
+                    <img class= "imagen-personalidad ps-3" src="imagenes/Property 1=Tierno.png">
+                </div>
+                <div class="col-4">
+                    <p class="body1Regular ms-1">Paciente</p>
+                </div>
+            </div>`
+        }
     }
-
     historiaMascota.innerHTML += `
     <div class="row">
         <div class="col-12 Headline2">
@@ -137,10 +221,9 @@ function mostrarDetalle(id) {
     nombreContacto.innerHTML += `
     <p class="body2Bold">${mascotaId.usuario}</p>
     `
-    imgContacto += `
+    imgContacto.innerHTML += `
     <img id="imagen-contacto" src="${mascotaId.imgusuario}">
     `
-    //console.log(id)
 
 }
 
@@ -151,19 +234,34 @@ function favorito(event) {
         if (localStorage.getItem('mascotaFavorita')) {
             var existe
             mascotaId2 = JSON.parse(localStorage.getItem("mascotaFavorita"))
-
             existe = mascotaId2.filter((item2) => item2.nombre == mascotasPerroBD[id].nombre)
-            console.log(existe)
+
             if (existe.length > 0) {
-                console.log("Existe")
-                let listaUnica = [...new Set(mascotaId2)];
-                localStorage.removeItem("mascotaFavorita", JSON.stringify(mascotaId2));
-                localStorage.setItem("mascotaFavorita", JSON.stringify(listaUnica))
+                //console.log("Existe")
+                let iconoFavorito = document.querySelector(".iconoFavorito")
+                iconoFavorito.innerHTML = ''
+                iconoFavorito.innerHTML += `
+                <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=No guardado.png" onClick="favorito()"/></a>
+                `
+                const index = mascotaId2.findIndex(item => item.nombre === existe[0].nombre)
+                mascotaId2.splice(index, 1)
+                localStorage.setItem("mascotaFavorita", JSON.stringify(mascotaId2))
+
             } else {
+                let iconoFavorito = document.querySelector(".iconoFavorito")
+                iconoFavorito.innerHTML = ''
+                iconoFavorito.innerHTML += `
+                <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=Guardado.png" onClick="favorito()"/></a>
+                `
                 mascotaId2.push(mascotasPerroBD[id])
                 localStorage.setItem("mascotaFavorita", JSON.stringify(mascotaId2))
             }
         } else {
+            let iconoFavorito = document.querySelector(".iconoFavorito")
+            iconoFavorito.innerHTML = ''
+            iconoFavorito.innerHTML += `
+            <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=Guardado.png" onClick="favorito()"/></a>
+            `
             mascotaId2.push(mascotasPerroBD[id])
             localStorage.setItem("mascotaFavorita", JSON.stringify(mascotaId2))
         }
@@ -175,23 +273,37 @@ function favorito(event) {
             mascotaId2 = JSON.parse(localStorage.getItem("mascotaFavorita"))
 
             existe = mascotaId2.filter((item2) => item2.nombre == mascotasGatoBD[id].nombre)
-
             if (existe.length > 0) {
-                console.log("Existe")
-                let listaUnica = [...new Set(mascotaId2)];
-                localStorage.removeItem("mascotaFavorita", JSON.stringify(mascotaId2));
-                localStorage.setItem("mascotaFavorita", JSON.stringify(listaUnica))
+                //console.log("Existe")
+                const index = mascotaId2.findIndex(item => item.nombre === existe[0].nombre)
+                mascotaId2.splice(index, 1)
+                localStorage.setItem("mascotaFavorita", JSON.stringify(mascotaId2))
+                let iconoFavorito = document.querySelector(".iconoFavorito")
+                iconoFavorito.innerHTML = ''
+                iconoFavorito.innerHTML += `
+                <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=No guardado.png" onClick="favorito()"/></a>
+                `
+                window.location.reload();
             } else {
                 mascotaId2.push(mascotasGatoBD[id])
                 localStorage.setItem("mascotaFavorita", JSON.stringify(mascotaId2))
+                let iconoFavorito = document.querySelector(".iconoFavorito")
+                iconoFavorito.innerHTML = ''
+                iconoFavorito.innerHTML += `
+                <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=Guardado.png" onClick="favorito()"/></a>
+                `
+                window.location.reload();
             }
         } else {
+            let iconoFavorito = document.querySelector(".iconoFavorito")
+            iconoFavorito.innerHTML = ''
+            iconoFavorito.innerHTML += `
+            <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=Guardado.png" onClick="favorito()"/></a>
+            `
             mascotaId2.push(mascotasGatoBD[id])
             localStorage.setItem("mascotaFavorita", JSON.stringify(mascotaId2))
+            window.location.reload();
         }
     }
-
-
-    //localStorage.setItem("mascotaFavorita", id)
 }
 document.querySelector(".flotante-favorito").onclick = favorito;

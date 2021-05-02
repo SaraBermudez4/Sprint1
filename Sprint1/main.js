@@ -36,12 +36,12 @@ function mostrarMascotas(mascotas) {
 
 }
 
-function perro(event){
+function perro(event) {
     let mascotasperro = mascotasPerroBD
     mostrarMascotas(mascotasperro)
     localStorage.setItem("tipoMascota", "perro")
 }
-function gato(event){
+function gato(event) {
     let mascotasgato = mascotasGatoBD
     mostrarMascotas(mascotasgato)
     localStorage.setItem("tipoMascota", "gato")
@@ -51,9 +51,9 @@ document.querySelector(".btn-gato").onclick = gato;
 
 window.addEventListener('load', e => {
     let tipo_mascota = localStorage.getItem("tipoMascota")
-    if(tipo_mascota == "perro"){
+    if (tipo_mascota == "perro") {
         perro()
-    }else{
+    } else {
         gato()
     }
     document.querySelector("#mascota0").addEventListener('click', function () {
