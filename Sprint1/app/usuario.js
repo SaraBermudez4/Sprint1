@@ -1,6 +1,6 @@
 import usuariosBD from './usuariosBD.js'
 
-function registrarse() {
+/*function registrarse() {
 
 }
 function iniciarSesion() {
@@ -47,44 +47,67 @@ function registro(event) {
 }
 document.querySelector(".btn-iniciarSesion").onclick = iniciar;
 document.querySelector(".btn-registrarse").onclick = registro;
+*/
+function mostrasDatosUser() {
 
-/*function mostrasDatosUser() {
-
-    let datos = document.querySelector(".datos")
-    let usuarios = usuariosBD
-    datos.innerHTML = ''
-    localStorage.setItem("Usuario",JSON.stringify(usuarios));
-
-    var user = JSON.parse(localStorage.getItem("Usuario"))
-
-    user.forEach(item => {
+    if (localStorage.getItem('Usuario')) {
+        var user = JSON.parse(localStorage.getItem("Usuario"))
+        let datos = document.querySelector(".datos")
+        datos.innerHTML = ''
         datos.innerHTML += `
-        <p class="body1Regular nombre">${item.nombre + ' ' + item.apellido}</p>
-        <p class="buttom btn-editar">Editar Cuenta</p>
-        `
-        document.querySelector("#name").value = item.nombre
-        document.querySelector("#lastName").value = item.apellido
-        document.querySelector("#email").value = item.correo
-    });
-}
+            <p class="body1Regular nombre">${user[0].nombre + ' ' + user[0].apellido}</p>
+            <p class="buttom btn-editar">Editar Cuenta</p>
+            `
+        document.querySelector("#name").value = user[0].nombre
+        document.querySelector("#lastName").value = user[0].apellido
+        document.querySelector("#email").value = user[0].correo
 
-var name = document.getElementById("name");
-var lastName = document.getElementById("lastName");
-var email = document.getElementById("email");
-var botonEnviar = document.getElementById("formUsuario");
+        var name = document.getElementById("name");
+        var lastName = document.getElementById("lastName");
+        var email = document.getElementById("email");
+        var botonEnviar = document.getElementById("formUsuario");
 
-botonEnviar.addEventListener('submit', (e) => {
-    receptor()
-    console.log("dddddd");
-    e.preventDefault()
-})
-function receptor() {
-    var usuario = {
-        name: name.value,
-        lastName: lastName.value,
-        email: email.value,
+        botonEnviar.addEventListener('submit', (e) => {
+
+            e.preventDefault()
+            var usuario = []
+            usuario[0] = {
+                nombre: name.value,
+                apellido: lastName.value,
+                correo: email.value,
+            }
+            localStorage.setItem("Usuario", JSON.stringify(usuario));
+        })
+    } else {
+        let datos = document.querySelector(".datos")
+        let usuarios = usuariosBD
+        datos.innerHTML = ''
+        datos.innerHTML += `
+            <p class="body1Regular nombre">${usuarios[0].nombre + ' ' + usuarios[0].nombre}</p>
+            <p class="buttom btn-editar">Editar Cuenta</p>
+            `
+        document.querySelector("#name").value = usuarios[0].nombre
+        document.querySelector("#lastName").value = usuarios[0].apellido
+        document.querySelector("#email").value = usuarios[0].correo
+
+        var name = document.getElementById("name");
+        var lastName = document.getElementById("lastName");
+        var email = document.getElementById("email");
+        var botonEnviar = document.getElementById("formUsuario");
+
+        localStorage.setItem("Usuario", JSON.stringify(usuarios));
+
+        botonEnviar.addEventListener('submit', (e) => {
+
+            e.preventDefault()
+            var usuario = []
+            usuario[0] = {
+                nombre: name.value,
+                apellido: lastName.value,
+                correo: email.value,
+            }
+            localStorage.setItem("Usuario", JSON.stringify(usuario));
+        })
     }
-
-    //localStorage.setItem("Usuario",JSON.stringify(usuario));
 }
-mostrasDatosUser()*/
+mostrasDatosUser()

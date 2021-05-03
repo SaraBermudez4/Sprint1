@@ -63,11 +63,9 @@ function mostrarDetalle(id) {
     `
     nombreMascota.innerHTML += `
     <p class="Headline1">${mascotaId.nombre}
-        <img src="imagenes/Component 5.png">
+        <img src="${mascotaId.genero}">
     </p>
     `
-
-
     razaMascota.innerHTML += `
         <div class="row">
             <div class="col-6">
@@ -107,7 +105,7 @@ function mostrarDetalle(id) {
     for (let i = 0; i < 3; i++) {
         if (mascotaId.personalidad[i] == "Cariñoso") {
             personalidades.innerHTML += `
-            <div class="col cards carinoso me-4">
+            <div class="col cards carinoso me-2">
                 <div class="col-4">
                     <img class= "imagen-personalidad ps-2" src="imagenes/Property 1=Cariñoso.png">
                 </div>
@@ -117,7 +115,7 @@ function mostrarDetalle(id) {
             </div>`
         } else if (mascotaId.personalidad[i] == "Inquieto") {
             personalidades.innerHTML += `
-            <div class="col cards inquieto me-4">
+            <div class="col cards inquieto me-2">
                 <div class="col-4">
                     <img class= "imagen-personalidad ps-3" src="imagenes/Property 1=Inquieto.png">
                 </div>
@@ -127,7 +125,7 @@ function mostrarDetalle(id) {
             </div>`
         } else if (mascotaId.personalidad[i] == "Juguetón") {
             personalidades.innerHTML += `
-            <div class="col cards jugueton">
+            <div class="col cards jugueton  me-2">
                 <div class="col-4">
                     <img class= "imagen-personalidad ps-3" src="imagenes/Property 1=Jugueton.png">
                 </div>
@@ -137,7 +135,7 @@ function mostrarDetalle(id) {
             </div>`
         } else if (mascotaId.personalidad[i] == "Tierno") {
             personalidades.innerHTML += `
-            <div class="col cards tierno">
+            <div class="col cards tierno me-2">
                 <div class="col-4">
                     <img class= "imagen-personalidad ps-3" src="imagenes/Property 1=Tierno.png">
                 </div>
@@ -148,9 +146,9 @@ function mostrarDetalle(id) {
         }
         else if (mascotaId.personalidad[i] == "Curioso") {
             personalidades.innerHTML += `
-            <div class="col cards curioso">
+            <div class="col cards curioso me-2">
                 <div class="col-4">
-                    <img class= "imagen-personalidad ps-3" src="imagenes/Property 1=Tierno.png">
+                    <img class= "imagen-personalidad ps-3" src="imagenes/curioso.png">
                 </div>
                 <div class="col-4">
                     <p class="body1Regular ms-1">Curioso</p>
@@ -159,9 +157,9 @@ function mostrarDetalle(id) {
         }
         else if (mascotaId.personalidad[i] == "Perezoso") {
             personalidades.innerHTML += `
-            <div class="col cards perezoso">
+            <div class="col cards perezoso me-2">
                 <div class="col-4">
-                    <img class= "imagen-personalidad ps-3" src="imagenes/Property 1=Tierno.png">
+                    <img class= "imagen-personalidad ps-3" src="imagenes/perezoso.png">
                 </div>
                 <div class="col-4">
                     <p class="body1Regular ms-1">Perezoso</p>
@@ -170,9 +168,9 @@ function mostrarDetalle(id) {
         }
         else if (mascotaId.personalidad[i] == "Tranquilo") {
             personalidades.innerHTML += `
-            <div class="col cards tranquilo">
+            <div class="col cards tranquilo me-2">
                 <div class="col-4">
-                    <img class= "imagen-personalidad ps-3" src="imagenes/Property 1=Tierno.png">
+                    <img class= "imagen-personalidad ps-3" src="imagenes/tranquilo.png">
                 </div>
                 <div class="col-4">
                     <p class="body1Regular ms-1">Tranquilo</p>
@@ -181,9 +179,9 @@ function mostrarDetalle(id) {
         }
         else if (mascotaId.personalidad[i] == "Aventurero") {
             personalidades.innerHTML += `
-            <div class="col cards aventurero">
+            <div class="col cards aventurero me-2">
                 <div class="col-4">
-                    <img class= "imagen-personalidad ps-3" src="imagenes/Property 1=Tierno.png">
+                    <img class= "imagen-personalidad ps-3" src="imagenes/aventurero.png">
                 </div>
                 <div class="col-4">
                     <p class="body1Regular ms-1">Aventurero</p>
@@ -192,9 +190,9 @@ function mostrarDetalle(id) {
         }
         else if (mascotaId.personalidad[i] == "Paciente") {
             personalidades.innerHTML += `
-            <div class="col cards paciente">
+            <div class="col cards paciente me-2">
                 <div class="col-4">
-                    <img class= "imagen-personalidad ps-3" src="imagenes/Property 1=Tierno.png">
+                    <img class= "imagen-personalidad ps-3" src="imagenes/paciente.png">
                 </div>
                 <div class="col-4">
                     <p class="body1Regular ms-1">Paciente</p>
@@ -221,8 +219,14 @@ function mostrarDetalle(id) {
     imgContacto.innerHTML += `
     <img id="imagen-contacto" src="${mascotaId.imgusuario}">
     `
-
 }
+function contacto(event) {
+    let id = localStorage.getItem("mascotaId");
+    var mascotaId = mascotasPerroBD[id]
+
+    localStorage.setItem("nombreContacto",mascotaId.usuario)
+}
+document.querySelector(".btn-contactar").onclick = contacto;
 
 function favorito(event) {
     let tipo_mascota = localStorage.getItem("tipoMascota")

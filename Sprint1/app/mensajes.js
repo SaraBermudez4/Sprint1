@@ -29,7 +29,7 @@ function mostrarMensajes() {
                         </div>
                     </div>
                     <div class="col cuerpo-mensaje">
-                        <p class="body2Regular contenido-mensaje">${item.recibido[index].substring(0, 65)}...</p>
+                        <p class="body2Regular contenido-mensaje">${item.recibido[index].substring(0, 55)}...</p>
                     </div>
                 </div>
                 <div class="col-1">

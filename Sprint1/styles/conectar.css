@@ -18,13 +18,23 @@
 }
 
 .txt-mensaje {
-    position: absolute;
     width: 350px;
     height: 48px;
     left: 8px;
     top: 700px;
     border-style: solid;
     border-color: black;
+    margin-bottom: 100px;
+    position: absolute;
+}
+.txt-mensaje2 {
+    width: 350px;
+    height: 48px;
+    left: 8px;
+    top: 700px;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 100px;
 }
 .flotante-atras {
     position: absolute;

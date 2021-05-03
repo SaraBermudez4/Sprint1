@@ -9,7 +9,7 @@
     background: var(--color-black);
 }
 
-.carinoso, .inquieto, .jugueton, .curioso, .perezoso, .tranquilo, .aventurero, .paciente {
+.carinoso, .inquieto, .jugueton, .tierno, .curioso, .perezoso, .tranquilo, .aventurero, .paciente {
     border-style: solid;
     border-color: var(--color-secundary)
 }
