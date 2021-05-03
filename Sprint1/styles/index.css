@@ -33,11 +33,9 @@
 .card-img {
     height: 250px;
     width: 156px;
-    filter: brightness(0.8);
     border-radius: 16px;
     border: none;
     margin-bottom: 15px;
-    border: 1px solid rgba(0, 0, 0, .125);
 }
 
 .card {
@@ -93,6 +91,13 @@ button:focus:not(:focus-visible) {
 .modal {
     padding-top: 40px;
     border-radius: 70px;
+}
+
+.card-img-overlay{
+    box-shadow: inset 0px -51px 40px -15px #000000;
+    height: 250px;
+    width: 156px;
+    border-radius: 16px;
 }
 /*
 #staticBackdrop1 {

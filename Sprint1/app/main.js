@@ -69,6 +69,3 @@ window.addEventListener('load', e => {
         localStorage.setItem("mascotaId", 3)
     })
 })
-
-
-
