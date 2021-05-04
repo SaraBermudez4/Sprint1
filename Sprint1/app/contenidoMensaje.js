@@ -17,7 +17,7 @@ function mostrarMensajes(id) {
             contenidoMensaje.innerHTML = ''
 
             datosContacto.innerHTML += `
-            <div class="row">
+            <div class="row header-contacto">
                 <div class="col mt-3 imagen-contacto mb-3">
                     <img src="${mensajes2.imagen}">
                     <div class="col mt-1">
@@ -47,7 +47,7 @@ function mostrarMensajes(id) {
             contenidoMensaje.innerHTML = ''
 
             datosContacto.innerHTML += `
-        <div class="row">
+        <div class="row header-contacto">
             <div class="col mt-3 imagen-contacto mb-3">
                 <img src="${mensajes3.imagen}">
                 <div class="col mt-1">

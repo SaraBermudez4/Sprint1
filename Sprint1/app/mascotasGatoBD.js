@@ -10,7 +10,8 @@ let mascotasGatoBD = [
         imgusuario : "imagenes/Ellipse10.png",
         imagen: "imagenes/gato1.jpg",
         genero: "imagenes/Property 1=female.png",
-        id:  0
+        id: 0,
+        categoria: "gato"
     },
     {
         nombre: "Kity",
@@ -23,7 +24,8 @@ let mascotasGatoBD = [
         imgusuario : "imagenes/Ellipse9.png",
         imagen: "imagenes/gato2.jpg",
         genero: "imagenes/Property 1=female.png",
-        id: 1
+        id: 1,
+        categoria: "gato"
     },
     {
         nombre: "Pelusa ",
@@ -36,21 +38,65 @@ let mascotasGatoBD = [
         imgusuario : "imagenes/Ellipse10.png",
         imagen: "imagenes/gato3.jpg",
         genero: "imagenes/Component 5.png",
-        id : 2
+        id : 2,
+        categoria: "gato"
     },
     {
         nombre: "Bombón",
         raza: "Gato americano ",
         edad: "10 meses",
-        ubicacion: "calle 74-53b - 93 - Medellín Antioquia Colombia",
+        ubicacion: "Calle 74-53b - 93 - Medellín Antioquia Colombia",
         personalidad: ["Perezoso", "Tranquilo", "Cariñoso"],
         historia: "Le pusimos bombón debido a que desde que era muy pequeña le encantaba dormir en su camita así que cada vez que se acostaba parecía una bolita y eso dice mucho de ella, no es una gata muy activa ,suele dormir la mayor parte del día, y le encanta la compañía por las tardes. La razón por la cual tengo que dejar ir a bombón es porque trabajó jornadas muy extensas y no me está quedando tiempo para cuidarla así que busco alguien que le pueda dar todo lo que ella merece.",
         usuario : "Francisca Zapata",
         imgusuario : "imagenes/Ellipse9.png",
         imagen: "imagenes/gato4.jpg",
         genero: "imagenes/Property 1=female.png",
-        id : 3
+        id : 3,
+        categoria: "gato"
     },
+    {
+        nombre: "Tito",
+        raza: "Persa",
+        edad: "3 meses",
+        ubicacion: "Calle 38-110a 190 - Medellin Antioquia Colombia",
+        personalidad: ["Cariñoso", " juguetón", "Tierno"],
+        historia : "Tito es un gato, miembro de una gran camada que nació hace poco y está esperando un hogar donde le den mucho amor, ya está preparado totalmente para adopción y tener mucha felicidad en su vida. Es gracioso y no se separa de su peluche",
+        usuario: "Natalia Flórez",
+        imgusuario : "imagenes/Ellipse9.png",
+        imagen: "imagenes/perro3.jpg",
+        genero: "imagenes/Component 5.png",
+        id : 4,
+        categoria: "gato"
+    },
+    {
+        nombre: "Casino",
+        raza: "Esfinge",
+        edad: "1 año",
+        ubicacion: "Calle 80-450a 580 - Medellin Antioquia Colombia",
+        personalidad: ["Cariñoso", " juguetón", "curioso"],
+        historia : "Casino es un gato, encontrado en la calle con quemaduras en su piel por el sol fue rescatado y está totalmente recuperado y listo para adoptar ",
+        usuario: "Santiago Torres",
+        imgusuario : "imagenes/Ellipse10.png",
+        imagen: "imagenes/perro3.jpg",
+        genero: "imagenes/Component 5.png",
+        id : 5,
+        categoria: "gato"
+    },
+    {
+        nombre: "Tortilla",
+        raza: "Mainecoon",
+        edad: "6 meses",
+        ubicacion: "Calle 17-120f 140 - Medellin Antioquia Colombia",
+        personalidad: ["Cariñoso", " juguetón", "curioso"],
+        historia : "Tortilla es una gata bebé que va a ser muy grande cuando esté en su total crecimiento, iba a ser vendida y además era maltratada, fue rescatada y ahora espera un hogar con mucho amor, le encanta tomar leche y jugar con otros gatitos",
+        usuario: "Catalina Ramos",
+        imgusuario : "imagenes/Ellipse9.png",
+        imagen: "imagenes/perro3.jpg",
+        genero: "imagenes/Property 1=female.png",
+        id : 6,
+        categoria: "gato"
+    }
 ]
 
 export default mascotasGatoBD

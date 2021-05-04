@@ -2,6 +2,7 @@
     font-family: Nunito;
     font-style: normal;
 }
+
 .btn-contactar {
     width: 100%;
     border-radius: 98px;
@@ -15,8 +16,9 @@
 }
 
 .imagen-personalidad {
-    align-content: center;
+    text-align: center;
 }
+
 .descripcion-mascota {
     position: absolute;
     background-color: white;
@@ -24,23 +26,65 @@
     width: 100%;
     border-radius: 16px 16px 0px 0px;
 }
+
 .flotante-favorito {
     position: absolute;
     bottom: 645px;
     right: 14px;
     z-index: 100;
 }
+
 .flotante-atras {
     position: absolute;
-    bottom: 744px;
-    right: 307px;
     z-index: 100;
+    left: 24px;
+    top: 24px;
 }
+
 .cards {
     border-radius: 8px;
     width: 92px;
     height: 92px;
     padding: 10px;
     justify-content: center;
-    align-items: center;
+    text-align: -webkit-center;
+
+}
+
+.img-detalle-mascota{
+    width: 100%;
+}
+
+@media (min-width: 540px){
+    .descripcion-mascota {
+        top: 30px;
+        width: 65%;
+        left: 35%;
+    }
+    .img-detalle-mascota {
+        width: 35%;
+    }
+    .texto-detalle-mascota {
+        font-size: 25px !important;
+    }
+    .texto-detalle-mascota-ubicacion {
+        width: 140%;
+        font-size: 25px !important;
+    }
+    header{
+        margin-top: 66px;
+    }
+    .flotante-favorito{
+        bottom: 535px;
+    }
+    .flotante-atras{
+        display: none;
+    }
+    .imagen-mascota, .descripcion-mascota{
+        padding: 20px;
+    }
+    .contactar{
+        margin-bottom: 15px !important;
+    }
+
 }

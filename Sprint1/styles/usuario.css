@@ -32,7 +32,6 @@
     padding: 0px;
     width: 94px;
     margin-left: 140px;
-
 }
 
 .nombre{
@@ -55,4 +54,38 @@
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0;
+}
+
+@media (min-width: 540px){
+    .tituloPerfil {
+        text-align: center;
+        margin-top: 100px !important;
+        margin-bottom: 45px;
+    }
+    .usuario{
+        width: 20%;
+        margin-left: 40%;
+    }
+    .formUsuario{
+        text-align: -webkit-center;
+    }
+    .div-usuario {
+        width: 80%;
+        background: #c3f0f4;
+        margin-left: 10%;
+        border-radius: 25px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .campo {
+        margin-left: 18%;
+    }
+    .edit {
+        width: 80%;
+    }
+    .guardar-cambios{
+        margin-left: 25%;
+        width: 50%;
+    
+    }
 }

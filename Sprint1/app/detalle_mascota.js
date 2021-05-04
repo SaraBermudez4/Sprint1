@@ -59,10 +59,10 @@ function mostrarDetalle(id) {
     razaMascota.innerHTML = ''
 
     imagenDetalle.innerHTML += `
-        <img src="${mascotaId.imagen}">
+        <img class="img-detalle-mascota" src="${mascotaId.imagen}">
     `
     nombreMascota.innerHTML += `
-    <p class="Headline1">${mascotaId.nombre}
+    <p class="Headline1 nombre-detalle-mascota">${mascotaId.nombre}
         <img src="${mascotaId.genero}">
     </p>
     `
@@ -71,20 +71,20 @@ function mostrarDetalle(id) {
             <div class="col-6">
                 <div class="row">
                     <div class="col-2">
-                        <img src="imagenes/Component 1.png">
+                        <img class="iconos" src="imagenes/Component 1.png">
                     </div>
                     <div class="col-10">
-                        <p class=" body2Regular">${mascotaId.raza}</p>
+                        <p class="body2Regular texto-detalle-mascota">${mascotaId.raza}</p>
                     </div>
                 </div>
             </div>
             <div class="col-6">
                 <div class="row">
                     <div class="col-2">
-                        <img src="imagenes/edad.png">
+                        <img class="iconos" src="imagenes/edad.png">
                     </div>
                     <div class="col-10">
-                        <p class="body2Regular">${mascotaId.edad}</p>
+                        <p class="body2Regular texto-detalle-mascota">${mascotaId.edad}</p>
                     </div>
                 </div>
             </div>
@@ -94,10 +94,10 @@ function mostrarDetalle(id) {
     lugarMascota.innerHTML += `
         <div class="row">
             <div class="col-1">
-                <img src="imagenes/Property 1=map-pin.png">
+                <img class="iconos" src="imagenes/Property 1=map-pin.png">
             </div>
             <div class="col-8">
-                <p class="body2Regular">${mascotaId.ubicacion}</p>
+                <p class="body2Regular texto-detalle-mascota-ubicacion">${mascotaId.ubicacion}</p>
             </div>
         </div>
     `
@@ -106,40 +106,40 @@ function mostrarDetalle(id) {
         if (mascotaId.personalidad[i] == "Cariñoso") {
             personalidades.innerHTML += `
             <div class="col cards carinoso me-2">
-                <div class="col-4">
+                <div class="col">
                     <img class= "imagen-personalidad ps-2" src="imagenes/Property 1=Cariñoso.png">
                 </div>
-                <div class="col-4">
+                <div class="col">
                     <p class="body1Regular">Cariñoso</p>
                 </div>
             </div>`
         } else if (mascotaId.personalidad[i] == "Inquieto") {
             personalidades.innerHTML += `
             <div class="col cards inquieto me-2">
-                <div class="col-4">
-                    <img class= "imagen-personalidad ps-3" src="imagenes/Property 1=Inquieto.png">
+                <div class="col">
+                    <img class= "imagen-personalidad" src="imagenes/Property 1=Inquieto.png">
                 </div>
-                <div class="col-4">
+                <div class="col">
                     <p class="body1Regular ms-2">Inquieto</p>
                 </div>
             </div>`
         } else if (mascotaId.personalidad[i] == "Juguetón") {
             personalidades.innerHTML += `
             <div class="col cards jugueton  me-2">
-                <div class="col-4">
-                    <img class= "imagen-personalidad ps-3" src="imagenes/Property 1=Jugueton.png">
+                <div class="col">
+                    <img class= "imagen-personalidad" src="imagenes/Property 1=Jugueton.png">
                 </div>
-                <div class="col-4">
+                <div class="col">
                     <p class="body1Regular ms-1">Jugueton</p>
                 </div>
             </div>`
         } else if (mascotaId.personalidad[i] == "Tierno") {
             personalidades.innerHTML += `
             <div class="col cards tierno me-2">
-                <div class="col-4">
-                    <img class= "imagen-personalidad ps-3" src="imagenes/Property 1=Tierno.png">
+                <div class="col">
+                    <img class= "imagen-personalidad" src="imagenes/Property 1=Tierno.png">
                 </div>
-                <div class="col-4">
+                <div class="col">
                     <p class="body1Regular ms-1">Tierno</p>
                 </div>
             </div>`
@@ -147,10 +147,10 @@ function mostrarDetalle(id) {
         else if (mascotaId.personalidad[i] == "Curioso") {
             personalidades.innerHTML += `
             <div class="col cards curioso me-2">
-                <div class="col-4">
-                    <img class= "imagen-personalidad ps-3" src="imagenes/curioso.png">
+                <div class="col">
+                    <img class= "imagen-personalidad" src="imagenes/curioso.png">
                 </div>
-                <div class="col-4">
+                <div class="col">
                     <p class="body1Regular ms-1">Curioso</p>
                 </div>
             </div>`
@@ -158,10 +158,10 @@ function mostrarDetalle(id) {
         else if (mascotaId.personalidad[i] == "Perezoso") {
             personalidades.innerHTML += `
             <div class="col cards perezoso me-2">
-                <div class="col-4">
-                    <img class= "imagen-personalidad ps-3" src="imagenes/perezoso.png">
+                <div class="col">
+                    <img class= "imagen-personalidad" src="imagenes/perezoso.png">
                 </div>
-                <div class="col-4">
+                <div class="col">
                     <p class="body1Regular ms-1">Perezoso</p>
                 </div>
             </div>`
@@ -169,10 +169,10 @@ function mostrarDetalle(id) {
         else if (mascotaId.personalidad[i] == "Tranquilo") {
             personalidades.innerHTML += `
             <div class="col cards tranquilo me-2">
-                <div class="col-4">
-                    <img class= "imagen-personalidad ps-3" src="imagenes/tranquilo.png">
+                <div class="col">
+                    <img class= "imagen-personalidad" src="imagenes/tranquilo.png">
                 </div>
-                <div class="col-4">
+                <div class="col">
                     <p class="body1Regular ms-1">Tranquilo</p>
                 </div>
             </div>`
@@ -180,10 +180,10 @@ function mostrarDetalle(id) {
         else if (mascotaId.personalidad[i] == "Aventurero") {
             personalidades.innerHTML += `
             <div class="col cards aventurero me-2">
-                <div class="col-4">
-                    <img class= "imagen-personalidad ps-3" src="imagenes/aventurero.png">
+                <div class="col">
+                    <img class= "imagen-personalidad" src="imagenes/aventurero.png">
                 </div>
-                <div class="col-4">
+                <div class="col">
                     <p class="body1Regular ms-1">Aventurero</p>
                 </div>
             </div>`
@@ -191,10 +191,10 @@ function mostrarDetalle(id) {
         else if (mascotaId.personalidad[i] == "Paciente") {
             personalidades.innerHTML += `
             <div class="col cards paciente me-2">
-                <div class="col-4">
-                    <img class= "imagen-personalidad ps-3" src="imagenes/paciente.png">
+                <div class="col">
+                    <img class= "imagen-personalidad" src="imagenes/paciente.png">
                 </div>
-                <div class="col-4">
+                <div class="col">
                     <p class="body1Regular ms-1">Paciente</p>
                 </div>
             </div>`

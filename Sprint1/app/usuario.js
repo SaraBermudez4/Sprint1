@@ -83,7 +83,7 @@ function mostrasDatosUser() {
         let usuarios = usuariosBD
         datos.innerHTML = ''
         datos.innerHTML += `
-            <p class="body1Regular nombre">${usuarios[0].nombre + ' ' + usuarios[0].nombre}</p>
+            <p class="body1Regular nombre">${usuarios[0].nombre + ' ' + usuarios[0].apellido}</p>
             <p class="buttom btn-editar">Editar Cuenta</p>
             `
         document.querySelector("#name").value = usuarios[0].nombre
