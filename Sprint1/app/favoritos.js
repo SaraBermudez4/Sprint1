@@ -69,4 +69,36 @@ window.addEventListener('load', e => {
         }
         localStorage.setItem("mascotaId", 3)
     })
+    document.querySelector("#mascota4").addEventListener('click', function () {
+        if(mascota_favorita[4].categoria = "tipoMascota"){
+            localStorage.setItem("tipoMascota", "perro")
+        }else{
+            localStorage.setItem("tipoMascota", "gato")
+        }
+        localStorage.setItem("mascotaId", 4)
+    })
+    document.querySelector("#mascota5").addEventListener('click', function () {
+        if(mascota_favorita[5].categoria = "tipoMascota"){
+            localStorage.setItem("tipoMascota", "perro")
+        }else{
+            localStorage.setItem("tipoMascota", "gato")
+        }
+        localStorage.setItem("mascotaId", 5)
+    })
+    document.querySelector("#mascota6").addEventListener('click', function () {
+        if(mascota_favorita[6].categoria = "tipoMascota"){
+            localStorage.setItem("tipoMascota", "perro")
+        }else{
+            localStorage.setItem("tipoMascota", "gato")
+        }
+        localStorage.setItem("mascotaId", 6)
+    })
+    document.querySelector("#mascota7").addEventListener('click', function () {
+        if(mascota_favorita[7].categoria = "tipoMascota"){
+            localStorage.setItem("tipoMascota", "perro")
+        }else{
+            localStorage.setItem("tipoMascota", "gato")
+        }
+        localStorage.setItem("mascotaId", 7)
+    })
 })
