@@ -34,19 +34,19 @@ function mostrarDetalle(id) {
             let iconoFavorito = document.querySelector(".iconoFavorito")
             iconoFavorito.innerHTML = ''
             iconoFavorito.innerHTML += `
-            <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=Guardado.png" onClick="favorito()"/></a>
+            <a class='flotante-favorito' href='#' ><img src="https://i.ibb.co/rQJsTnW/Property-1-Guardado.png" onClick="favorito()"/></a>
         `
         } else {
             let iconoFavorito = document.querySelector(".iconoFavorito")
             iconoFavorito.innerHTML = ''
             iconoFavorito.innerHTML += `
-            <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=No guardado.png" onClick="favorito()"/></a>`
+            <a class='flotante-favorito' href='#' ><img src="https://i.ibb.co/ZYG3xZ2/Property-1-No-guardado.png" onClick="favorito()"/></a>`
         }
     } else {
         let iconoFavorito = document.querySelector(".iconoFavorito")
         iconoFavorito.innerHTML = ''
         iconoFavorito.innerHTML += `
-        <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=No guardado.png" onClick="favorito()"/></a>`
+        <a class='flotante-favorito' href='#' ><img src="https://i.ibb.co/ZYG3xZ2/Property-1-No-guardado.png" onClick="favorito()"/></a>`
     }
 
     imgContacto.innerHTML = ''
@@ -71,7 +71,7 @@ function mostrarDetalle(id) {
             <div class="col-6">
                 <div class="row">
                     <div class="col-2">
-                        <img class="iconos" src="imagenes/Component 1.png">
+                        <img class="iconos" src="https://i.ibb.co/2sxTfjG/Component-1.png">
                     </div>
                     <div class="col-10">
                         <p class="body2Regular texto-detalle-mascota">${mascotaId.raza}</p>
@@ -81,7 +81,7 @@ function mostrarDetalle(id) {
             <div class="col-6">
                 <div class="row">
                     <div class="col-2">
-                        <img class="iconos" src="imagenes/edad.png">
+                        <img class="iconos" src="https://i.ibb.co/xH0ktzq/edad.png">
                     </div>
                     <div class="col-10">
                         <p class="body2Regular texto-detalle-mascota">${mascotaId.edad}</p>
@@ -94,7 +94,7 @@ function mostrarDetalle(id) {
     lugarMascota.innerHTML += `
         <div class="row">
             <div class="col-1">
-                <img class="iconos" src="imagenes/Property 1=map-pin.png">
+                <img class="iconos" src="https://i.ibb.co/gDRjWMT/Property-1-map-pin.png">
             </div>
             <div class="col-8">
                 <p class="body2Regular texto-detalle-mascota-ubicacion">${mascotaId.ubicacion}</p>
@@ -107,7 +107,7 @@ function mostrarDetalle(id) {
             personalidades.innerHTML += `
             <div class="col cards carinoso me-2">
                 <div class="col">
-                    <img class= "imagen-personalidad ps-2" src="imagenes/Property 1=Cariñoso.png">
+                    <img class= "imagen-personalidad ps-2" src="https://i.ibb.co/NLbYcZt/Property-1-Cari-oso.png">
                 </div>
                 <div class="col">
                     <p class="body1Regular">Cariñoso</p>
@@ -117,7 +117,7 @@ function mostrarDetalle(id) {
             personalidades.innerHTML += `
             <div class="col cards inquieto me-2">
                 <div class="col">
-                    <img class= "imagen-personalidad" src="imagenes/Property 1=Inquieto.png">
+                    <img class= "imagen-personalidad" src="https://i.ibb.co/6bHcbNy/Property-1-Inquieto.png">
                 </div>
                 <div class="col">
                     <p class="body1Regular ms-2">Inquieto</p>
@@ -127,17 +127,17 @@ function mostrarDetalle(id) {
             personalidades.innerHTML += `
             <div class="col cards jugueton  me-2">
                 <div class="col">
-                    <img class= "imagen-personalidad" src="imagenes/Property 1=Jugueton.png">
+                    <img class= "imagen-personalidad" src="https://i.ibb.co/c6XBB4j/Property-1-Jugueton.png">
                 </div>
                 <div class="col">
-                    <p class="body1Regular ms-1">Jugueton</p>
+                    <p class="body1Regular ms-1">Juguetón</p>
                 </div>
             </div>`
         } else if (mascotaId.personalidad[i] == "Tierno") {
             personalidades.innerHTML += `
             <div class="col cards tierno me-2">
                 <div class="col">
-                    <img class= "imagen-personalidad" src="imagenes/Property 1=Tierno.png">
+                    <img class= "imagen-personalidad" src="https://i.ibb.co/bF79Kx2/Property-1-Tierno.png">
                 </div>
                 <div class="col">
                     <p class="body1Regular ms-1">Tierno</p>
@@ -148,7 +148,7 @@ function mostrarDetalle(id) {
             personalidades.innerHTML += `
             <div class="col cards curioso me-2">
                 <div class="col">
-                    <img class= "imagen-personalidad" src="imagenes/curioso.png">
+                    <img class= "imagen-personalidad" src="https://i.ibb.co/R9QXW3K/curioso.png">
                 </div>
                 <div class="col">
                     <p class="body1Regular ms-1">Curioso</p>
@@ -159,7 +159,7 @@ function mostrarDetalle(id) {
             personalidades.innerHTML += `
             <div class="col cards perezoso me-2">
                 <div class="col">
-                    <img class= "imagen-personalidad" src="imagenes/perezoso.png">
+                    <img class= "imagen-personalidad" src="https://i.ibb.co/D9mHYsX/perezoso.png">
                 </div>
                 <div class="col">
                     <p class="body1Regular ms-1">Perezoso</p>
@@ -170,7 +170,7 @@ function mostrarDetalle(id) {
             personalidades.innerHTML += `
             <div class="col cards tranquilo me-2">
                 <div class="col">
-                    <img class= "imagen-personalidad" src="imagenes/tranquilo.png">
+                    <img class= "imagen-personalidad" src="https://i.ibb.co/wr2jF07/tranquilo.png">
                 </div>
                 <div class="col">
                     <p class="body1Regular ms-1">Tranquilo</p>
@@ -181,7 +181,7 @@ function mostrarDetalle(id) {
             personalidades.innerHTML += `
             <div class="col cards aventurero me-2">
                 <div class="col">
-                    <img class= "imagen-personalidad" src="imagenes/aventurero.png">
+                    <img class= "imagen-personalidad" src="https://i.ibb.co/VwbhhjM/aventurero.png">
                 </div>
                 <div class="col">
                     <p class="body1Regular ms-1">Aventurero</p>
@@ -192,7 +192,7 @@ function mostrarDetalle(id) {
             personalidades.innerHTML += `
             <div class="col cards paciente me-2">
                 <div class="col">
-                    <img class= "imagen-personalidad" src="imagenes/paciente.png">
+                    <img class= "imagen-personalidad" src="https://i.ibb.co/bXzBHFm/paciente.png">
                 </div>
                 <div class="col">
                     <p class="body1Regular ms-1">Paciente</p>
@@ -242,7 +242,7 @@ function favorito(event) {
                 let iconoFavorito = document.querySelector(".iconoFavorito")
                 iconoFavorito.innerHTML = ''
                 iconoFavorito.innerHTML += `
-                <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=No guardado.png" onClick="favorito()"/></a>
+                <a class='flotante-favorito' href='#' ><img src="https://i.ibb.co/ZYG3xZ2/Property-1-No-guardado.png" onClick="favorito()"/></a>
                 `
                 const index = mascotaId2.findIndex(item => item.nombre === existe[0].nombre)
                 mascotaId2.splice(index, 1)
@@ -254,7 +254,7 @@ function favorito(event) {
                 let iconoFavorito = document.querySelector(".iconoFavorito")
                 iconoFavorito.innerHTML = ''
                 iconoFavorito.innerHTML += `
-                <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=Guardado.png" onClick="favorito()"/></a>
+                <a class='flotante-favorito' href='#' ><img src="https://i.ibb.co/rQJsTnW/Property-1-Guardado.png" onClick="favorito()"/></a>
                 `
                 mascotaId2.push(mascotasPerroBD[id])
                 localStorage.setItem("mascotaFavorita", JSON.stringify(mascotaId2))
@@ -265,7 +265,7 @@ function favorito(event) {
             let iconoFavorito = document.querySelector(".iconoFavorito")
             iconoFavorito.innerHTML = ''
             iconoFavorito.innerHTML += `
-            <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=Guardado.png" onClick="favorito()"/></a>
+            <a class='flotante-favorito' href='#' ><img src="https://i.ibb.co/rQJsTnW/Property-1-Guardado.png" onClick="favorito()"/></a>
             `
             mascotaId2.push(mascotasPerroBD[id])
             localStorage.setItem("mascotaFavorita", JSON.stringify(mascotaId2))
@@ -288,7 +288,7 @@ function favorito(event) {
                 let iconoFavorito = document.querySelector(".iconoFavorito")
                 iconoFavorito.innerHTML = ''
                 iconoFavorito.innerHTML += `
-                <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=No guardado.png" onClick="favorito()"/></a>
+                <a class='flotante-favorito' href='#' ><img src="https://i.ibb.co/ZYG3xZ2/Property-1-No-guardado.png" onClick="favorito()"/></a>
                 `
                 window.location.reload();
             } else {
@@ -297,7 +297,7 @@ function favorito(event) {
                 let iconoFavorito = document.querySelector(".iconoFavorito")
                 iconoFavorito.innerHTML = ''
                 iconoFavorito.innerHTML += `
-                <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=Guardado.png" onClick="favorito()"/></a>
+                <a class='flotante-favorito' href='#' ><img src="https://i.ibb.co/rQJsTnW/Property-1-Guardado.png" onClick="favorito()"/></a>
                 `
                 window.location.reload();
             }
@@ -305,7 +305,7 @@ function favorito(event) {
             let iconoFavorito = document.querySelector(".iconoFavorito")
             iconoFavorito.innerHTML = ''
             iconoFavorito.innerHTML += `
-            <a class='flotante-favorito' href='#' ><img src="imagenes/Property 1=Guardado.png" onClick="favorito()"/></a>
+            <a class='flotante-favorito' href='#' ><img src="https://i.ibb.co/rQJsTnW/Property-1-Guardado.png" onClick="favorito()"/></a>
             `
             mascotaId2.push(mascotasGatoBD[id])
             localStorage.setItem("mascotaFavorita", JSON.stringify(mascotaId2))

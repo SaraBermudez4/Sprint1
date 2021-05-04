@@ -83,6 +83,18 @@ function gato(event) {
     document.querySelector("#mascota3").addEventListener('click', function () {
         localStorage.setItem("mascotaId", 3)
     })
+    document.querySelector("#mascota4").addEventListener('click', function () {
+        localStorage.setItem("mascotaId", 4)
+    })
+    document.querySelector("#mascota5").addEventListener('click', function () {
+        localStorage.setItem("mascotaId", 5)
+    })
+    document.querySelector("#mascota6").addEventListener('click', function () {
+        localStorage.setItem("mascotaId", 6)
+    })
+    document.querySelector("#mascota7").addEventListener('click', function () {
+        localStorage.setItem("mascotaId", 7)
+    })
 }
 document.querySelector(".btn-perro").onclick = perro;
 document.querySelector(".btn-gato").onclick = gato;

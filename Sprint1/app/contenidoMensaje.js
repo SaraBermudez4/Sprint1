@@ -23,7 +23,7 @@ function mostrarMensajes(id) {
                     <div class="col mt-1">
                         <p class="body1Bold">${mensajes2.usuario}</p>
                     </div>
-                    <a class='flotante-atras' href='mensajes.html'><img src="imagenes/back.png" /></a>  
+                    <a class='flotante-atras' href='mensajes.html'><img src="https://i.ibb.co/gwWm0MX/back.png" /></a>  
                 </div>
             </div>
             `
@@ -53,7 +53,7 @@ function mostrarMensajes(id) {
                 <div class="col mt-1">
                     <p class="body1Bold">${mensajes3.usuario}</p>
                 </div>
-                <a class='flotante-atras' href='mensajes.html'><img src="imagenes/back.png" /></a>  
+                <a class='flotante-atras' href='mensajes.html'><img src="https://i.ibb.co/gwWm0MX/back.png" /></a>  
             </div>
         </div>
         `
@@ -85,7 +85,7 @@ function mostrarMensajes(id) {
                 <div class="col mt-1">
                     <p class="body1Bold">${mensajes3.usuario}</p>
                 </div>
-                <a class='flotante-atras' href='mensajes.html'><img src="imagenes/back.png" /></a>  
+                <a class='flotante-atras' href='mensajes.html'><img src="https://i.ibb.co/gwWm0MX/back.png" /></a>  
             </div>
         </div>
         `

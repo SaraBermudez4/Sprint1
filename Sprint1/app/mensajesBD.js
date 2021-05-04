@@ -1,6 +1,6 @@
 let mensajesBD = [
     {
-        imagen: "imagenes/Ellipse9.png",
+        imagen: "https://i.ibb.co/JvbRKsn/Ellipse9.png",
         usuario: "Maria Dolores",
         hora_enviado: ["4:00 PM", "5:00 PM"],
         hora_recibido: ["4:36 PM", "6:00 PM"],
@@ -9,7 +9,7 @@ let mensajesBD = [
         id : 0
     },
     {
-        imagen: "imagenes/Ellipse10.png",
+        imagen: "https://i.ibb.co/0jk5rR8/Ellipse10.png",
         usuario: "Enrique Gómez",
         hora_enviado: ["4:00 PM", "5:00 PM"],
         hora_recibido: ["4:36 PM", "6:00 PM"],
@@ -18,7 +18,7 @@ let mensajesBD = [
         id : 1
     },
     {
-        imagen: "imagenes/Ellipse9.png",
+        imagen: "https://i.ibb.co/JvbRKsn/Ellipse9.png",
         usuario: "Sofia Álvarez",
         hora_enviado: ["4:00 PM", "5:00 PM"],
         hora_recibido: ["4:36 PM", "6:00 PM"],
@@ -27,7 +27,7 @@ let mensajesBD = [
         id : 2
     },
     {
-        imagen: "imagenes/Ellipse10.png",
+        imagen: "https://i.ibb.co/0jk5rR8/Ellipse10.png",
         usuario: "Martin Lemus",
         hora_enviado: ["4:00 PM", "5:00 PM"],
         hora_recibido: ["4:36 PM", "6:00 PM"],
@@ -36,7 +36,7 @@ let mensajesBD = [
         id : 3
     },
     {
-        imagen: "imagenes/Ellipse10.png",
+        imagen: "https://i.ibb.co/0jk5rR8/Ellipse10.png",
         usuario: "Juan Jesus",
         hora_enviado: ["4:00 PM", "5:00 PM"],
         hora_recibido: ["4:36 PM", "6:00 PM"],
@@ -45,7 +45,7 @@ let mensajesBD = [
         id : 4
     },
     {
-        imagen: "imagenes/Ellipse9.png",
+        imagen: "https://i.ibb.co/JvbRKsn/Ellipse9.png",
         usuario: "Fernanda Gutierrez",
         hora_enviado: ["4:00 PM", "5:00 PM"],
         hora_recibido: ["4:36 PM", "6:00 PM"],
@@ -54,7 +54,7 @@ let mensajesBD = [
         id : 5
     },
     {
-        imagen: "imagenes/Ellipse10.png",
+        imagen: "https://i.ibb.co/0jk5rR8/Ellipse10.png",
         usuario: "Enrique López",
         hora_enviado: ["4:00 PM", "5:00 PM"],
         hora_recibido: ["4:36 PM", "6:00 PM"],
@@ -63,7 +63,7 @@ let mensajesBD = [
         id : 6
     },
     {
-        imagen: "imagenes/Ellipse9.png",
+        imagen: "https://i.ibb.co/JvbRKsn/Ellipse9.png",
         usuario: "Francisca Zapata",
         hora_enviado: ["4:00 PM", "5:00 PM"],
         hora_recibido: ["4:36 PM", "6:00 PM"],

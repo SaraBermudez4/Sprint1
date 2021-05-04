@@ -29,7 +29,7 @@
 
 .flotante-favorito {
     position: absolute;
-    bottom: 645px;
+    top: 0%;
     right: 14px;
     z-index: 100;
 }
@@ -76,6 +76,8 @@
     }
     .flotante-favorito{
         bottom: 535px;
+        top: 5%;
+        z-index: 0;
     }
     .flotante-atras{
         display: none;

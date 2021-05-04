@@ -33,7 +33,7 @@ function mostrarMensajes() {
                     </div>
                 </div>
                 <div class="col-1">
-                    <img class="ver-mensaje" src="imagenes/Property 1=chevron-right.png" alt="">
+                    <img class="ver-mensaje" src="https://i.ibb.co/Mg94z18/Property-1-chevron-right.png" alt="">
                 </div>
             </div>`
     })
